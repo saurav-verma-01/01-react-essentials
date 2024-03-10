@@ -4,9 +4,10 @@ import reactLogo from "../assets/react-core-concepts.png";
 const Header = () => {
   const startingWord = ["Core", "Crucial", "Fundamentals"];
   const getRandomInt = (max) => {
-    return Math.floor(Math.random() * max + 1);
+    const randomInd = Math.floor(Math.random() * max);
+    return randomInd;
   };
-  const description = startingWord[getRandomInt(startingWord.length - 1)];
+  const description = startingWord[getRandomInt(startingWord.length)];
 
   return (
     <header>
